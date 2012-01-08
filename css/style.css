@@ -1,0 +1,48 @@
+body{
+
+  font-family: 'Open Sans', sans-serif;
+  background-color: LightGray
+
+}
+
+body h1, #statement{
+
+  text-align:center;
+
+}
+
+body h1{
+
+margin-bottom:50px;
+
+}
+
+#statement{
+
+margin-left:auto;
+margin-right:auto;
+width:75%;
+
+}
+
+#stats{
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 10px 10px 10px 10px;
+  width:35%;
+  background-color:gray;
+  margin-bottom: 50px;
+  margin-top:50px;
+
+}
+
+#days_free, #cigs_not_smoked, #money_saved{
+
+text-shadow: 0.1em 0.1em 0.2em black;
+
+}
+
+.center {text-align:center;}
+
