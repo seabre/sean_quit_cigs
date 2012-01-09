@@ -28,6 +28,17 @@ days_cig_free = ->
   $("#days_free").html(days.toFixed(5))
   return
 
+tar_avoided = ->
+  start_date = new Date(2012, 0, 2)
+  curr_date = new Date 
+  cigs_a_week = (240.0 / 604800)
+  cigs = (curr_date.getTime()-start_date.getTime()) / 1000.0
+  cigs *= cigs_a_week
+  cigs *= 11 #Camel lights have 11mg of tar in them
+  cigs = Math.round(cigs*100000) / 100000
+  $("#tar_avoided").html(cigs.toFixed(5))
+  return
+
 $(document).ready ->
   every(1000, days_cig_free)
   every(1000, cigs_not_smoked_since)
