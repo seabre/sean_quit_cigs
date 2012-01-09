@@ -43,4 +43,5 @@ $(document).ready ->
   every(1000, days_cig_free)
   every(1000, cigs_not_smoked_since)
   every(1000, money_saved_since)
+  every(1000, tar_avoided)
   return
